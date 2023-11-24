@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a5d6840b-134f-4850-b838-576233ef4d2a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="300"/>
+	<property name="ireport.y" value="0"/>
+	<field name="id_producto" class="java.lang.String"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="descripcion" class="java.lang.String"/>
+	<field name="precio" class="java.lang.String"/>
+	<field name="existencia" class="java.lang.String"/>
+	<field name="categoria" class="java.lang.String"/>
+	<field name="apellido" class="java.lang.String"/>
+	<field name="nombre_provedor" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="122" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="196" height="49" uuid="64acb0c9-6e6d-4f7a-a086-6458c776ed7f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="158" y="47" width="113" height="40" uuid="ca559269-91bd-478e-bcc0-0bd34103f4e5"/>
+				<textElement>
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="87" width="165" height="35" uuid="156e2aeb-dd06-40f7-834b-cc712ade9b71"/>
+				<textElement>
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRODUCTOS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="414" y="-11" width="1008" height="128" uuid="407ae6c6-4918-4e6b-936a-a15d274a74c1"/>
+				<imageExpression><![CDATA["C:\\Users\\Juan\\Desktop\\PROYECTO\\WILI\\build\\classes\\imagenes\\inventario3.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="17" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="10" width="26" height="20" uuid="b1e40e60-0ab6-4be0-b9de-355895cea20a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="541" y="10" width="125" height="20" uuid="ab23e45b-f720-4895-9d45-a3815b0604a2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[APELLIDO PROVEEDOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="2" width="150" height="20" uuid="c07b9a20-ddf8-4dec-9df8-837f14887b83"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESCRIPCION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="672" y="10" width="130" height="20" forecolor="#333333" uuid="90df4f77-183d-4cfa-bace-e73a7857e05c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRE PROVEEDOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="10" width="62" height="20" forecolor="#333333" uuid="7aaffe2b-de16-43b1-aeea-9ff8d7404318"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRECIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="354" y="10" width="80" height="20" uuid="74b41313-c8ee-4bdf-b185-bf6096e1318f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[EXISTENCIA/U]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="439" y="10" width="89" height="20" forecolor="#333333" uuid="3c0ccd06-b664-4d0f-9162-b1d10dd6f1a6"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CATEGORIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="10" width="96" height="20" forecolor="#333333" uuid="dd803753-662e-44da-98d0-320b29194d81"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="29" width="802" height="1" uuid="b6d556ab-4e94-448f-9fe9-a3c924481c1e"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="36" height="20" uuid="6b919684-fc30-466e-938b-68aede1d0c18"/>
+				<textFieldExpression><![CDATA[$F{id_producto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="48" y="0" width="77" height="20" uuid="7d7fcd67-3799-4330-a898-47a1d6051b6d"/>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="137" y="0" width="150" height="20" uuid="ffd44b42-8c7a-45bb-ab27-99e2fdf2f29a"/>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="0" width="62" height="20" uuid="034ea7d3-0c18-4175-9beb-bb3feeffffaa"/>
+				<textFieldExpression><![CDATA[$F{precio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="357" y="0" width="80" height="20" uuid="d4c92525-9386-4d8a-96f1-f8f7be0f981d"/>
+				<textFieldExpression><![CDATA[$F{existencia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="0" width="87" height="20" uuid="fe687bfe-7cf2-41b9-8d9b-287f9ef7b0e8"/>
+				<textFieldExpression><![CDATA[$F{categoria}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="541" y="0" width="123" height="20" uuid="b6f2d59b-6603-4efd-bb40-481bdbfcc655"/>
+				<textFieldExpression><![CDATA[$F{apellido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="672" y="0" width="130" height="20" uuid="ce49888a-0c9c-4238-87ff-0573f751d0e7"/>
+				<textFieldExpression><![CDATA[$F{nombre_provedor}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="27" width="802" height="1" uuid="f2eedf92-cb04-430b-bf10-fa3a79470b3f"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

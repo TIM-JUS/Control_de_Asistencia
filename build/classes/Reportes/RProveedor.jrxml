@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3098b437-5728-426d-982b-60395fb741aa">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="280"/>
+	<property name="ireport.y" value="0"/>
+	<field name="id_proveedor" class="java.lang.String"/>
+	<field name="apellido" class="java.lang.String"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="dni" class="java.lang.String"/>
+	<field name="direccion" class="java.lang.String"/>
+	<field name="celular" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement x="155" y="52" width="86" height="36" forecolor="#333333" uuid="aa951d23-895b-4c30-ba56-a76142ae900c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="88" width="210" height="37" forecolor="#333333" uuid="10b5392a-f3db-4509-9b30-3926b15cf810"/>
+				<textElement>
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PROVEEDORES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="207" height="52" uuid="f05ca691-6fbf-49f4-88a6-9e2e12da4be1"/>
+				<textElement>
+					<font fontName="Times New Roman" size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE]]></text>
+			</staticText>
+			<image>
+				<reportElement x="417" y="-6" width="1008" height="127" uuid="3a445069-a2eb-48f0-91bd-fe956c956452"/>
+				<imageExpression><![CDATA["C:\\Users\\Juan\\Desktop\\PROYECTO\\WILI\\build\\classes\\imagenes\\inventario3.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="20" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="7" width="38" height="20" uuid="693eb7f6-4b87-4238-9e9e-b78c8c3300a4"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="7" width="123" height="20" uuid="c22871ea-5b45-4047-92f9-6959434d19d4"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[APELLIDOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="7" width="116" height="20" uuid="d8666313-d8d3-4338-9433-22682746d07e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="337" y="7" width="57" height="20" uuid="8035f3e0-1efb-4001-96c5-83246baf2c70"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DNI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="7" width="121" height="20" uuid="c4f9ba42-059e-4770-aa6e-f5aebdf08c38"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIRECCIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="560" y="7" width="99" height="20" uuid="d8626fb5-6de9-427e-8fab-c7ed8abda345"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NºCELULAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="671" y="7" width="121" height="20" uuid="bbba941c-0bc5-4f64-af16-62731819c782"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMAIL]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="38" height="20" uuid="6b3c1d54-b5a7-4486-8af6-02fc9ecfade8"/>
+				<textFieldExpression><![CDATA[$F{id_proveedor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="0" width="123" height="20" uuid="e6f920d3-8361-4c3f-a1b8-103c44e58eec"/>
+				<textFieldExpression><![CDATA[$F{apellido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="0" width="116" height="20" uuid="6bf528fc-2982-43d9-b100-a2f6b693f809"/>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="0" width="67" height="20" uuid="ef6d3d92-d41b-490f-a86c-866a10368641"/>
+				<textFieldExpression><![CDATA[$F{dni}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="428" y="0" width="107" height="20" uuid="58250240-df45-4e1c-8682-9e0366071ed9"/>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="0" width="100" height="20" uuid="b0ecd88f-af8b-4ea9-a564-43db46172bd3"/>
+				<textFieldExpression><![CDATA[$F{celular}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="671" y="0" width="121" height="20" uuid="7b618262-f658-4783-ba99-f5ba3e38fdb9"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="19" width="802" height="1" uuid="2a66ea4a-e169-4d81-85c9-d1e2561c41d1"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="60" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
