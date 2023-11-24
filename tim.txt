@@ -4,6 +4,7 @@ bienvenida.
 principalventana
 empleado
 horario
+img
 
 
 
