@@ -3,6 +3,7 @@ register
 bienvenida.
 principalventana
 empleado
+horario
 
 
 
