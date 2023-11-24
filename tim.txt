@@ -6,6 +6,6 @@ empleado
 horario
 img
 class
-
+metodo
 
 
