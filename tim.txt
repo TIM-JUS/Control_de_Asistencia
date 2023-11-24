@@ -8,5 +8,6 @@ img
 class
 metodo
 .
-class
+class 
+conexionbd
 
