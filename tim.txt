@@ -10,4 +10,4 @@ metodo
 .
 class 
 conexionbd
-
+final
