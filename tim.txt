@@ -1,3 +1,9 @@
 login
 register
 bienvenida.
+principalventana
+empleado
+
+
+
+
